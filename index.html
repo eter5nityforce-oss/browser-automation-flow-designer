@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Automation Flow Designer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Browser Automation Flow Designer</h1>
+    </header>
+    <main class="main-container">
+        <div class="column" id="browser-view">
+            <h2>Browser View</h2>
+            <div class="iframe-container">
+                <iframe id="embedded-browser" src="about:blank"></iframe>
+            </div>
+        </div>
+        <div class="column" id="visual-editor">
+            <h2>Visual Editor</h2>
+            <canvas id="flowchart"></canvas>
+        </div>
+        <div class="column" id="action-config">
+            <h2>Action Configuration</h2>
+            <div id="config-panel"></div>
+        </div>
+        <div class="column" id="code-output">
+            <h2>Generated Code</h2>
+            <pre><code id="generated-code"></code></pre>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
